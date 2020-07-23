@@ -1,4 +1,7 @@
 package Modulo;
+
+import jdk.nashorn.api.tree.ForLoopTree;
+
 public class Aritmetica{
     
     //suma de dos numeros 
@@ -20,7 +23,15 @@ public class Aritmetica{
         }
         return 0;
     }
-    
+    ///potencia de un un numero 
+    public double potencia(double x,double y){
+         double z=0;
+        for(int i=1;i>=y;i++){
+            z+=multiplicacion(x, x);
+
+     }
+     return z;
+    }
 
 
 }
